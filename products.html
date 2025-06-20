@@ -3,31 +3,78 @@
         <meta name="viewpoint"content="width=device-width,intial-scale=1.0">
         <title>Maganelux</title>
         <link rel="stylesheet"href="style.css">
+
+       <title>MAGANELUX </title>
+        <style>
+                body {font-family:Arial, Helvetica, sans-serif;margin:0;padding:0;
+                }
+                header{background: color #333;color:white;padding: 20px ;text-align: center;
+                }
+                footer{background-color: #222;color: #ccc;padding: 15px;text-align: center;position: fixed;bottom: 0;width: 100%;
+                
+                }
+                main{padding: 20px;
+                min-height: 100vh;/* So the footer does not overlap content*/
+        }
+
+        </style>
+        <title>picture  below</title>
+        
     </head>
-        <body style="background-color:hotpink;">
-            <img src="images/man.jpg" style="height: 60px;float: left;"><br>
-            <a href="index.html">home</a>
-            <a href="contact us.html">contact us</a>
-            <a href="about us.html">about us</a>
-            <a href="products.html">products</a>
-            <a href="enquries.html">enquries</a>
-            <a href="coverpage.html">coverpage</a>
-            <h1 style="color: rgb(112, 22, 112);font-style: italic;padding: 25PX">PRODUCTS</h1>
-            <p style="font-style: oblique;">At Maganelux Jewelry, we pride ourselves on offering a wide range of high-quality jewelry for both men and women, designed to complement every style and occasion. Whether you're looking for something classic, contemporary, or unique, our collection has something special for everyone. <br> For women, we offer an exquisite selection of elegant necklaces, bracelets, earrings, and rings, perfect for any occasion. From timeless diamond rings and sophisticated pearl earrings to bold statement pieces, our jewelry is crafted to make women feel confident and beautiful. We also specialize in engagement rings, offering stunning designs that symbolize love and commitment, as well as custom pieces tailored to your personal vision. <br> For men, we feature a stylish range of cufflinks, rings, bracelets, and necklaces. Whether you're after something sleek and minimalistic or a more intricate design, our men's collection is designed to enhance any look, from casual to formal. Our high-quality materials, including sterling silver, gold, and platinum, ensure that each piece is not only durable but also fashionable. <br>At Maganelux Jewelry, we are committed to providing our customers with pieces that exude both luxury and functionality, offering jewelry that is meant to be cherished for years. Whatever your style, our diverse collection is sure to meet your needs and exceed your expectations.
+        <body style="background-color:purple;">
+            <h1 style="text-align: center;">PRODUCTS</h1>
+            <nav style="text-align: center;">
+                    
+                    <a href="index.html" style="color: white;margin: 0 15px;">Home</a>
+                    <a href="about us.html" style="color: white;margin: 0 15px;">About Us</a>
+                    <a href="contact us.html" style="color: white;margin: 0 15px;">contact</a>
+                    <a href="products.html" style="color: white;margin: 0 15px;">products</a>
+                    <a href="enquries.html" style="color: white;margin: 0 15px;">enquries</a>
+                    
+            </nav>
+        </header>
+        
+            
+            <p style="font-style: oblique;text-align: center;">At Maganelux Jewelry, we pride ourselves on offering a wide range of high-quality jewelry for both men and women, designed to complement every style and occasion. Whether you're looking for something classic, contemporary, or unique, our collection has something special for everyone. <br> For women, we offer an exquisite selection of elegant necklaces, bracelets, earrings, and rings, perfect for any occasion. From timeless diamond rings and sophisticated pearl earrings to bold statement pieces, our jewelry is crafted to make women feel confident and beautiful. We also specialize in engagement rings, offering stunning designs that symbolize love and commitment, as well as custom pieces tailored to your personal vision. <br> For men, we feature a stylish range of cufflinks, rings, bracelets, and necklaces. Whether you're after something sleek and minimalistic or a more intricate design, our men's collection is designed to enhance any look, from casual to formal. Our high-quality materials, including sterling silver, gold, and platinum, ensure that each piece is not only durable but also fashionable. <br>At Maganelux Jewelry, we are committed to providing our customers with pieces that exude both luxury and functionality, offering jewelry that is meant to be cherished for years. Whatever your style, our diverse collection is sure to meet your needs and exceed your expectations.
 
 
 
             </p>
-            <img src="images/jewellery.jpg" alt="">
-            <H2 style="color: rgb(124, 53, 88);font-style: italic">PRODUCTS SOLD IN THE STORES</H2>
+            
+            <H2 style="color: rgb(110, 65, 87);font-style: italic">PRODUCTS SOLD IN THE STORES</H2>
+            
+           
+            <img src="images/watch.jpg"> <br>
             WATCHES <br>
             NECKLACES <br>
-            BRACELETS <br>
             EARRINGS <br>
-            RINGS BOTH FOR ENGAMENT AND WEDDING <br>
-           <h2 style="color: rgb(100, 21, 66);font-style: italic"> DISCOUNT WILL BE OFFERED TO CUSTOMERS WHO PURCHASES JEWELRY THAT COSTS MORE THAN R2000 !!! <h/4>
+            RINGS FOR ENGAGEMENT AND WEDDINGS <br>
 
-        
+
+            <nav style="text-align: left;">
+            <button onclick="showPic()">show picture</button>
+            <img id="myPic" style="display: none;width: 300px;margin-top: 20px;">
+            <script>
+                function showPic() {
+                    const img = document.getElementById("myPic");
+                    img.src ="images/bigone.jpg";//inside the "images" folder
+                    img.style.display ="block";
+                }
+            </script>
+            </nav>
+            
+            <br>
+
+
+            
+
+           <h2 style="color: rgb(100, 21, 66);font-style: italic"> DISCOUNT WILL BE OFFERED TO CUSTOMERS WHO PURCHASES JEWELRY THAT COSTS MORE THAN R2000 !!! <h/4>
+            
+            
+            
+            <footer>
+                &copy; 2025 website ///All rights reserved
+        </footer>
         </body>
     </head>
 </html>

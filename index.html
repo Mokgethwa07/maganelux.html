@@ -1,34 +1,75 @@
 <html>
     <head>
-        <meta name="viewpoint"content="width=device-width,intial-scale=1.0">
-        <title>Maganelux</title>
-        <link rel="stylesheet"href="style.css">
+        <title>website with header and footer </title>
+        <style>
+                body {font-family:Arial, Helvetica, sans-serif;margin:0;padding:0;
+                }
+                header{background: color #333;color:white;padding: 20px ;text-align: center;
+                }
+                footer{background-color: #222;color: #ccc;padding: 15px;text-align: center;position: fixed;bottom: 0;width: 100%;
+                
+                }
+                main{padding: 20px;
+                min-height: 80vh;/* So the footer does not overlap content*/
+        }
+
+        </style>
+        <title>image switcher</title>
+        <style>
+                body{font-family: sans-serif;text-align: center;padding: 30px;
+                }
+                img{width: 300px;height: auto;border-radius: 10px;box-shadow: 0 0 10px #888;margin-top: 20px;
+                }
+                button{padding: 10px 20px;margin-top: 20px;font-size: 16px;
+                }
+        </style>
+        
         
 
         </head>
-        <body style="background-color: rgb(153, 58, 109);">
-            <h1 style="color: rgb(241, 86, 169);margin-top: 30px;font-style: italic">WELCOME TO MAGANELUX </h1>
-            <img src="images/man.jpg" style="height: 60px;float: left;"><br>
-            
-            
-            <a href="index.html">home</a>
-          <a href="about us.html">about </a> 
-            <a href="contact us.html">contact </a>
-            <a href="enquries.html">enquries</a>
-            <a href="products.html">products</a>
-             <a href="coverpage.html">coverpage</a>
-             
-             <p style="padding: 25px;font-style:oblique ">Welcome to Maganelux – Where Elegance Meets Timeless Craftsmanship
+        <body style="background-color:purple">
 
-                We’re so glad you’re here. At Maganelux, we believe that jewelry is more than just an accessory — it’s a personal expression, a story, and a symbol of cherished moments. Founded in 2020, our mission has always been to offer quality jewelry that inspires confidence, elegance, and a lasting connection.
+                <header>
+                        <h1>my website</h1>
+                <nav>
+                        
+                        <a href="index.html" style="color: white;margin: 0 15px;">Home</a>
+                        <a href="about us.html" style="color: white;margin: 0 15px;">About Us</a>
+                        <a href="contact us.html" style="color: white;margin: 0 15px;">contact</a>
+                        <a href="products.html" style="color: white;margin: 0 15px;">products</a>
+                        <a href="enquries.html" style="color: white;margin: 0 15px;">enquries</a>
+                        
+                </nav>
+        </header>
+        <main>
+                <h2>WELCOME TO MAGANELUX NO 1 JEWELLERY STORE </h2>
+                <p style="padding: 25px;font-style:oblique;text-align: center;" >Welcome to Maganelux – Where Elegance Meets Timeless Craftsmanship
+
+                        We’re so glad you’re here. At Maganelux, we believe that jewelry is more than just an accessory — it’s a personal expression, a story, and a symbol of cherished moments. Founded in 2020, our mission has always been to offer quality jewelry that inspires confidence, elegance, and a lasting connection.
+                        
+                        From the very beginning, we’ve been passionate about blending classic design with contemporary style. Each piece in our collection is thoughtfully crafted to ensure exceptional quality and beauty. Whether you're shopping for yourself or searching for the perfect gift, we’re here to help you find something meaningful that reflects your unique taste. <br>We pride ourselves not only on the craftsmanship of our jewelry but also on the experience we provide. From browsing to checkout, our goal is to make your journey with Maganelux as enjoyable and inspiring as the pieces we offer. Every customer is part of our story, and we’re honored to be part of yours.
+        
+                        As you explore our collection, we invite you to discover timeless pieces that will become a part of your everyday elegance or special moments. Thank you for choosing Maganelux — where beauty, quality, and meaning come together. </p>
+
+        <h2>click thebutton below to change the picture </h2>
+        <button id="nextBtn">next image</button>
+        <br>
+        <img  id="galleryImg"src="images" alt="slideshow Image">
+        <script>
+                // Images list (you can replace with your own image file or URLs)
+                const images=["glassneck.jpg",
+        "glass.jpg","earrings.jpg","ring3.jpg","ring1","siver.jpg","watch.jpg","ring2.jpg","bracelets.jpg","bigone.jpg",];
+        let index=0; //start with the firstimage
+        const btn = document.getElementById("nextBtn")
+        const img = document.getElementById("galleryImg")
+        btn.addEventListener("click",function(){index =(index +1)% images.length;//loop back to 0 when done 
+                img.src=images[index];});
+        </script>
+        </main>
+        <footer>
+                &copy; 2025 website ///All rights reserved
+        </footer>
                 
-                From the very beginning, we’ve been passionate about blending classic design with contemporary style. Each piece in our collection is thoughtfully crafted to ensure exceptional quality and beauty. Whether you're shopping for yourself or searching for the perfect gift, we’re here to help you find something meaningful that reflects your unique taste. <br>We pride ourselves not only on the craftsmanship of our jewelry but also on the experience we provide. From browsing to checkout, our goal is to make your journey with Maganelux as enjoyable and inspiring as the pieces we offer. Every customer is part of our story, and we’re honored to be part of yours.
-
-                As you explore our collection, we invite you to discover timeless pieces that will become a part of your everyday elegance or special moments. Thank you for choosing Maganelux — where beauty, quality, and meaning come together. <br >  <
-
-
-
-                > </p>    <h1 style="font-style:italic ;">WELCOME TO MAGANE FAMILY</h1>
                 <img src="images/best.jpg" alt="">
             
 
